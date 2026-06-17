@@ -45,5 +45,68 @@
     "formulas": {
       "distance": "time * speed"
     }
+  },
+  {
+    "id": "math-arithmetic-fraction-addition-medium",
+    "subject": "math",
+    "topic": "fractions",
+    "difficulty": "medium",
+    "prompt": "Add the fractions: {a}/{denominator} + {b}/{denominator}",
+    "answer": "The denominators are the same, so add the numerators: {a} + {b} = {numerator}. The answer is {numerator}/{denominator}.",
+    "variables": [
+      {"name": "denominator", "min": 3, "max": 12},
+      {"name": "a", "min": 1, "max": 5},
+      {"name": "b", "min": 1, "max": 5}
+    ],
+    "formulas": {
+      "numerator": "a + b"
+    }
+  },
+  {
+    "id": "math-percentage-discount-medium",
+    "subject": "math",
+    "topic": "percentages",
+    "difficulty": "medium",
+    "prompt": "A jacket costs ${price}. It is discounted by {percent}%. How many dollars is the discount?",
+    "answer": "Discount = price x percent / 100 = {price} x {percent} / 100 = ${discount}.",
+    "variables": [
+      {"name": "price", "min": 20, "max": 100, "step": 5},
+      {"name": "percent", "min": 10, "max": 50, "step": 5}
+    ],
+    "formulas": {
+      "discount": "price * percent / 100"
+    }
+  },
+  {
+    "id": "math-geometry-triangle-area-medium",
+    "subject": "math",
+    "topic": "geometry",
+    "difficulty": "medium",
+    "prompt": "A triangle has base {base} cm and height {height} cm. Find its area.",
+    "answer": "Area = base x height / 2 = {base} x {height} / 2 = {area} square cm.",
+    "variables": [
+      {"name": "base", "min": 4, "max": 20, "step": 2},
+      {"name": "height", "min": 4, "max": 16, "step": 2}
+    ],
+    "formulas": {
+      "area": "base * height / 2"
+    }
+  },
+  {
+    "id": "math-algebra-two-step-medium",
+    "subject": "math",
+    "topic": "algebra",
+    "difficulty": "medium",
+    "prompt": "Solve for x: {a}x - {b} = {c}",
+    "answer": "Add {b} to both sides: {a}x = {left}. Divide by {a}: x = {x}.",
+    "variables": [
+      {"name": "a", "min": 2, "max": 8},
+      {"name": "x", "min": 2, "max": 15},
+      {"name": "b", "min": 3, "max": 20}
+    ],
+    "formulas": {
+      "c": "a * x - b",
+      "left": "c + b"
+    }
   }
 ]

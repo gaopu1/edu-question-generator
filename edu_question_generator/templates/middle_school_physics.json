@@ -43,5 +43,65 @@
     "formulas": {
       "voltage": "current * resistance"
     }
+  },
+  {
+    "id": "physics-force-newtons-law-medium",
+    "subject": "physics",
+    "topic": "forces",
+    "difficulty": "medium",
+    "prompt": "An object has mass {mass} kg and acceleration {acceleration} m/s^2. What force is acting on it?",
+    "answer": "Force = mass x acceleration = {mass} x {acceleration} = {force} N.",
+    "variables": [
+      {"name": "mass", "min": 2, "max": 12},
+      {"name": "acceleration", "min": 2, "max": 8}
+    ],
+    "formulas": {
+      "force": "mass * acceleration"
+    }
+  },
+  {
+    "id": "physics-work-energy-medium",
+    "subject": "physics",
+    "topic": "energy",
+    "difficulty": "medium",
+    "prompt": "A force of {force} N moves an object {distance} meters. How much work is done?",
+    "answer": "Work = force x distance = {force} x {distance} = {work} J.",
+    "variables": [
+      {"name": "force", "min": 5, "max": 30, "step": 5},
+      {"name": "distance", "min": 2, "max": 12}
+    ],
+    "formulas": {
+      "work": "force * distance"
+    }
+  },
+  {
+    "id": "physics-pressure-medium",
+    "subject": "physics",
+    "topic": "pressure",
+    "difficulty": "medium",
+    "prompt": "A force of {force} N acts on an area of {area} m^2. What is the pressure?",
+    "answer": "Pressure = force / area = {force} / {area} = {pressure} Pa.",
+    "variables": [
+      {"name": "area", "min": 2, "max": 10},
+      {"name": "pressure", "min": 10, "max": 80, "step": 5}
+    ],
+    "formulas": {
+      "force": "area * pressure"
+    }
+  },
+  {
+    "id": "physics-motion-distance-medium",
+    "subject": "physics",
+    "topic": "motion",
+    "difficulty": "medium",
+    "prompt": "A runner moves at {speed} m/s for {time} seconds. How far does the runner travel?",
+    "answer": "Distance = speed x time = {speed} x {time} = {distance} meters.",
+    "variables": [
+      {"name": "speed", "min": 2, "max": 9},
+      {"name": "time", "min": 5, "max": 20}
+    ],
+    "formulas": {
+      "distance": "speed * time"
+    }
   }
 ]
