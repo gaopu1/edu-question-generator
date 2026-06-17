@@ -4,6 +4,8 @@
 
 `edu-question-generator` is a small open-source Python project for tutors, teachers, and learning centers that need printable middle-school math and physics worksheets.
 
+Current release: `v0.1.0`.
+
 The project generates questions from simple JSON templates, then exports two DOCX files:
 
 - a student worksheet without answers
@@ -51,6 +53,12 @@ Install dependencies:
 
 ```bash
 python -m pip install -r requirements.txt
+```
+
+For editable local development, you can also install the project metadata:
+
+```bash
+python -m pip install -e ".[dev]"
 ```
 
 ## Quick Start

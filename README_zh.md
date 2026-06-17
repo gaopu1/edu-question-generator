@@ -4,6 +4,8 @@
 
 `edu-question-generator` 是一个开源 Python 项目，帮助家教、教师和培训机构从结构化模板生成初中数学和物理练习题，并导出为 DOCX 文档。
 
+当前版本：`v0.1.0`。
+
 项目会为每份练习生成两个文件：
 
 - 学生版：只有题目，不含答案
@@ -51,6 +53,12 @@ source .venv/bin/activate
 
 ```bash
 python -m pip install -r requirements.txt
+```
+
+如果要以开发模式安装项目，也可以运行：
+
+```bash
+python -m pip install -e ".[dev]"
 ```
 
 ## 快速开始
