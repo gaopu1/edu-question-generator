@@ -1,0 +1,49 @@
+[
+  {
+    "id": "math-algebra-linear-easy",
+    "subject": "math",
+    "topic": "algebra",
+    "difficulty": "easy",
+    "prompt": "Solve for x: {a}x + {b} = {c}",
+    "answer": "Subtract {b} from both sides: {a}x = {rhs}. Divide by {a}: x = {x}.",
+    "variables": [
+      {"name": "a", "min": 2, "max": 9},
+      {"name": "x", "min": 1, "max": 12},
+      {"name": "b", "min": 1, "max": 20}
+    ],
+    "formulas": {
+      "c": "a * x + b",
+      "rhs": "c - b"
+    }
+  },
+  {
+    "id": "math-geometry-rectangle-easy",
+    "subject": "math",
+    "topic": "geometry",
+    "difficulty": "easy",
+    "prompt": "A rectangle has length {length} cm and width {width} cm. Find its area.",
+    "answer": "Area = length x width = {length} x {width} = {area} square cm.",
+    "variables": [
+      {"name": "length", "min": 4, "max": 18},
+      {"name": "width", "min": 2, "max": 12}
+    ],
+    "formulas": {
+      "area": "length * width"
+    }
+  },
+  {
+    "id": "math-ratio-speed-medium",
+    "subject": "math",
+    "topic": "ratio",
+    "difficulty": "medium",
+    "prompt": "A cyclist travels {distance} km in {time} hours. What is the average speed in km/h?",
+    "answer": "Average speed = distance / time = {distance} / {time} = {speed} km/h.",
+    "variables": [
+      {"name": "time", "min": 2, "max": 6},
+      {"name": "speed", "min": 8, "max": 18}
+    ],
+    "formulas": {
+      "distance": "time * speed"
+    }
+  }
+]

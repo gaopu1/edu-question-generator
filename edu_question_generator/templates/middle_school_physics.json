@@ -1,0 +1,47 @@
+[
+  {
+    "id": "physics-motion-speed-easy",
+    "subject": "physics",
+    "topic": "motion",
+    "difficulty": "easy",
+    "prompt": "A toy car travels {distance} meters in {time} seconds. What is its speed?",
+    "answer": "Speed = distance / time = {distance} / {time} = {speed} m/s.",
+    "variables": [
+      {"name": "time", "min": 2, "max": 12},
+      {"name": "speed", "min": 2, "max": 10}
+    ],
+    "formulas": {
+      "distance": "time * speed"
+    }
+  },
+  {
+    "id": "physics-density-medium",
+    "subject": "physics",
+    "topic": "density",
+    "difficulty": "medium",
+    "prompt": "A block has mass {mass} g and volume {volume} cm^3. Find its density.",
+    "answer": "Density = mass / volume = {mass} / {volume} = {density} g/cm^3.",
+    "variables": [
+      {"name": "volume", "min": 2, "max": 12},
+      {"name": "density", "min": 2, "max": 9}
+    ],
+    "formulas": {
+      "mass": "volume * density"
+    }
+  },
+  {
+    "id": "physics-electricity-ohms-law-easy",
+    "subject": "physics",
+    "topic": "electricity",
+    "difficulty": "easy",
+    "prompt": "A circuit has current {current} A and resistance {resistance} ohms. What is the voltage?",
+    "answer": "Voltage = current x resistance = {current} x {resistance} = {voltage} V.",
+    "variables": [
+      {"name": "current", "min": 1, "max": 8},
+      {"name": "resistance", "min": 2, "max": 12}
+    ],
+    "formulas": {
+      "voltage": "current * resistance"
+    }
+  }
+]
